@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0ICA0IDQ0NDQ8NDQ0NFREWFhURExMYHSggGBolGxMVITEhJSkrLi4uFx8zOD84Nyg5LisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAQIDBAf/xAApEAEBAAIABgMAAQMFAAAAAAAAAQIRAxIhMVFxQWGRgRPh8QQiscHR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APuDyWat+q9debiz/dfvqDIALMrOzrjlL7cVB20aZxz8/rpASONds+3tz0DC7vmgC89P6n0yA3zxeaOQDt0NOK7B00aY5r5XnoLo0nP9LzQE0aa3DQMppvSaBk01o0DK6a0sgM6Oy2sUDK7RUARQHqrhx+89ad648edPVBygkUFVFgLHTFmRcrqAc0v8Fji3jn5/QWxNN6ZBlGtICIoCAAAAAACgLLVmVTSyAsy+mpUkS5a9g3uJa5W7QHTRpja81BdGk5l5gNBzQB6HPizpfTeNSg8kajP/AE1AVqJGoDWLPFvx46tz+7jbv+QQAFxysbl32c0B1NM45+f1oGUbQGRdICCgIougRZFkakBJF0WyOdy2DWWfhgAAAAAAAAAejCrWMa2Dy8SayvvaxePOs+4mINxqMx0xgM8S6ntya4l3fXRkAAAAEsJlYqWA6TLauHZvHPyDaaWKDOjTWl0DMiyLpbqdwJGcs/H6zllv14ZAAAAAAAAAAAAB0xdI5RvGgx/qJ29sYOnGnS/XVywB2xat1LUxZ4t+P5BzAAAAAABQTTNxdDQMY5WOmOW05U5bOwOsakc8c/K3PYLllrs51UBEUBAAAAAAAAAAAAajcrnG4DWXWOHDd3GTrfYO+P8Aw45Xd35bzup7cwAAAUEUUEXS6WQEkakWRvQMzFM8pPus58T4n65gxnumOeu7bNgOkquE3HXHPYKKAyKgIKgAAAAAAAALGoy1AajNnX23GOJdTfgGcst310RjFsAUAFkWQEkakWRqQGZG5FkYz4vxP0Gsspj78OOeVv8A4iAAAAAljOmzQJjn5dHKwlsB1QmW1Bka0mgZGtJoEFABQERoAjUZjcgNRz4/b11dY45dd/YOWLcZxbgKuiRqQEkakWYtzEGZiuVk7s58WTpO7jbvuDWfEt+p4YAAFBBQEFABQE0mmtGgY03jkaNA0aSNwGNGm9GgY0ab0l0CaNFzic4LpWOagLG5GZHTGAmd1PblG+Jd310TQOem8YadMcQSRuYrImfEk9gt1O7jnxLfqM5W3uAgujQINaNAgul0DOjTWl0DOjTWjQM6XS6XQM6XRU/qT/ALpdOd4viM3iUHXSc0ny5bNA6ziReZxXHIG7ay0aBlGkBBQHWRvtEkXKA5yNSNTFrQMcrU6JldOdtoLnxN9v1jTWl0DGl01pdAxpdNaNAzpdNaSgmhnLiYz5YvG8Sg6o4Xi5fUZu73tB6LnJ8xi8ae3HlWYg3eNfiJc7fk0ugZ0aa0ugZ0ulANAAAAsamTADekJkoMjWgHokNKAM5XwtNA56Ji6Vm5yfMA5V5WLxp8brF41+AdtJbJ9PPc7fms6B3vFx9sXj+J+uejQLeJlfn8YrWl0DHKvK0AzpdKAml0AAAAAAAAAAAAACyoA1zDID2M5Zyd0AYvH8Rm8a+gBi5W97WQBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9k=);
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #21293a;
+    color: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+header .navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 05px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+header .navbar a:hover,
+.active {
+    background: #2c3e50;
+    transition: 0.6s;
+}
+
+header .btn {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section h2 {
+    color: #fff;
+    font-size: 10rem;
+    letter-spacing: 0.9rem;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .btn {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        flex-direction: column;
+        min-width: 300px;
+        height: 100vh;
+        background: #2c3e50;
+        top: 0;
+        right: -100%;
+        transition: all 0.9s;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 10rem;
+    }
+
+    header .navbar.active2 {
+        right: 0;
+        transition: 0.9s;
+    }
+
+    header .navbar .close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+
+    header .navbar a {
+        display: block;
+        font-size: 1.9rem;
+        margin: 15px;
+        padding: 0.5rem 15px;
+    }
+
+    header .navbar a:hover {
+        background: #21293a;
+        color: #fff;
+    }
+
+    header .logo {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    section h2 {
+        color: #fff;
+        font-size: 5rem;
+        padding: 2rem;
+        letter-spacing: 0.9rem;
+        text-align: center;
+    }
+}
+
+.h1 {
+
+    text-align: top left;
+    font-size: 15px;
+}
+
+
+
